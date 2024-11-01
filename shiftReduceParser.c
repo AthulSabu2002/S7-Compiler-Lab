@@ -6,7 +6,7 @@ char input[16], action[20], stack[15], shiftAction[10];
 
 void applyReduction();
 
-void main()
+int main()
 {
     puts("GRAMMAR is : \n E->E+E \n E->E*E \n E->(E) \n E->id");
     puts("\nEnter input string : ");
@@ -33,6 +33,8 @@ void main()
             applyReduction();
         }
     }
+
+    return 0;
 }
 
 void applyReduction()
