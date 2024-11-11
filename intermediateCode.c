@@ -10,8 +10,7 @@ void generateIntermediateCode();
 void fetchLeftOperand(int);
 void fetchRightOperand(int);
 
-struct OperatorInfo
-{
+struct OperatorInfo{
     int position;
     char operator;
 } operators[15];

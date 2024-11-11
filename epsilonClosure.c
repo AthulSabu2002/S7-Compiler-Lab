@@ -8,7 +8,7 @@ char states[5][10], closure[10][10][10], trans[10][10];
 void print_closure(char c_state[5]){
     for(k =0; k < n; k++){
         if(strcmp(c_state, states[k]) == 0){
-            printf(" %s ", closure[k][0]);
+            printf(" %s", closure[k][0]);
             print_closure(closure[k][0]);
         }
     }
